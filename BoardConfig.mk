@@ -18,6 +18,12 @@
 
 DEVICE_PATH := device/motorola/kiev
 
+# Architecture
+TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
+
+# Platform
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno619
+
 # Display
 TARGET_SCREEN_DENSITY := 420
 
@@ -49,6 +55,9 @@ ODM_MANIFEST_DNP_FILES := $(DEVICE_PATH)/odm/manifest_dnp.xml
 ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/odm/manifest_n.xml
 ODM_MANIFEST_NJ_FILES := $(DEVICE_PATH)/odm/manifest_nj.xml
 ODM_MANIFEST_NP_FILES := $(DEVICE_PATH)/odm/manifest_np.xml
+
+# Partitions
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
