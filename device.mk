@@ -34,10 +34,6 @@ PRODUCT_PACKAGES += \
 	NoCutoutOverlay
 
 # Audio
-PRODUCT_PACKAGES += \
-    audio.primary.lito \
-    libqcompostprocbundle
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/audio/audio_ext_spkr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_ext_spkr.conf \
