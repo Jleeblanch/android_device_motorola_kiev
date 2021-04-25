@@ -43,6 +43,9 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     DTC_EXT=$(shell pwd)/$(DEVICE_PATH)/dtc/dtc \
     DTC_OVERLAY_TEST_EXT=$(shell pwd)/$(DEVICE_PATH)/dtc/ufdt_apply_overlay
 
+# Manifest
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # ODM
 ODM_MANIFEST_SKUS := \
     dn \
